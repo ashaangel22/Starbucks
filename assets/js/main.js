@@ -12,6 +12,28 @@ $(document).ready(function(){
         .addIndicators({name: "1 (duration: 500)"})
         .addTo(controller);
     
+    var coffeeCups = TweenMax.to(".intro .mask", 2, {x:"100%"});
+    
+    
+     var college = new ScrollMagic.Scene({
+        triggerElement: "#college",
+    })
+        .on('start', function(){
+            $('.collegeCount').countTo('start');   
+        })
+        .addTo(controller)
+//        .setTween(tl3);
+     
+     var jobs = new ScrollMagic.Scene({
+        triggerElement: "#jobs",
+    })
+        .on('start', function(){
+            $('.jobCount').countTo('start');   
+        })
+        .addTo(controller)
+//        .setTween(tl3);
+    
+    
 	$('.count').countTo({
 		from: 0,
 		to: 671396071,
@@ -26,6 +48,29 @@ $(document).ready(function(){
 
     $('.count').countTo('stop');
     
+    var cupsCoffee = new ScrollMagic.Scene({
+        triggerElement: '#cupsCoffee',
+    })
+        .on('start', function(){
+            $('.count').countTo('start');   
+        })
+        .setTween(coffeeCups) 
+        .addTo(controller);
+    
+    $('.teaCount').countTo({
+		from: 0,
+		to: 347394871,
+		speed: 2000, //2seconds
+		refreshInterval: 5,
+		formatter: function (value, options) {
+    		value = value.toFixed(options.decimals);
+    		value = value.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+    		return value;
+  		}
+	});
+
+    $('.teaCount').countTo('stop');
+    
     $('.veteranCount').countTo({
 		from: 0,
 		to: 8000,
@@ -38,7 +83,9 @@ $(document).ready(function(){
   		}
 	});
     
-     $('.collegeCount').countTo({
+    $('.veteranCount').countTo('stop');
+    
+    $('.collegeCount').countTo({
 		from: 0,
 		to: 6535,
 		speed: 2000, //2seconds
@@ -49,6 +96,8 @@ $(document).ready(function(){
     		return value;
   		}
 	});
+    
+    $('.collegeCount').countTo('stop');
     
     $('.jobCount').countTo({
 		from: 0,
@@ -62,6 +111,8 @@ $(document).ready(function(){
   		}
 	});
     
+    $('.jobCount').countTo('stop');
+    
     $('.farmCount').countTo({
 		from: 0,
 		to: 301506,
@@ -73,6 +124,8 @@ $(document).ready(function(){
     		return value;
   		}
 	});
+    
+    $('.farmCount').countTo('stop');
 
     $('.payCount').countTo({
 		from: 0,
@@ -85,6 +138,8 @@ $(document).ready(function(){
     		return value;
   		}
 	});
+    
+    $('.payCount').countTo('stop');
     
 	new WOW().init();
 
@@ -108,10 +163,9 @@ $(document).ready(function(){
         triggerElement: "#tea",
     }) 
         .on('start', function(){
-            $('.count').countTo('start');   
+            $('.teaCount').countTo('start');   
     })
         .addTo(controller)
-        .addIndicators({name: "tea"})
         .setTween(tl);
     
     $('.farms img').eq(0);
@@ -140,8 +194,10 @@ $(document).ready(function(){
      var farms = new ScrollMagic.Scene({
         triggerElement: "#farms",
     })
+        .on('start', function(){
+            $('.farmCount').countTo('start');   
+        })
         .addTo(controller)
-        .addIndicators({name: "farms"})
         .setTween(tl2);
     
     $('.veterans img').eq(0);
@@ -160,8 +216,10 @@ $(document).ready(function(){
      var veterans = new ScrollMagic.Scene({
         triggerElement: "#veterans",
     })
+        .on('start', function(){
+            $('.veteranCount').countTo('start');   
+        })
         .addTo(controller)
-        .addIndicators({name: "vets"})
         .setTween(tl3);
     
     tl4 = new TimelineMax({yoyo:true});
@@ -173,7 +231,6 @@ $(document).ready(function(){
         triggerElement: "#trees",
     })
         .addTo(controller)
-        .addIndicators({name: "trees"})
         .setTween(tl4);
     
     $('.pay .flipcup').eq(0);
@@ -201,9 +258,23 @@ $(document).ready(function(){
      var cups = new ScrollMagic.Scene({
         triggerElement: "#pay",
     })
+        .on('start', function(){
+            $('.payCount').countTo('start');   
+        })
         .addTo(controller)
-        .addIndicators({name: "pay"})
         .setTween(tl5);
+    
+    var tl6 = new TimelineMax();
+    
+    tl6.to($('.starbucks .text'), 3, {opacity:1})
+	.to($('.starbucks .text'), 1, {opacity:0})
+    .to($('.starbucks .logo'), 4, {opacity:1})
+    
+    var cups = new ScrollMagic.Scene({
+        triggerElement: "#end",
+    })
+        .addTo(controller)
+        .setTween(tl6);
 
 });
 

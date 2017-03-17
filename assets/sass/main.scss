@@ -105,12 +105,37 @@ h4 {
     line-height: 1.5;
 }
 
+h5 {
+    position: absolute;
+	text-align: left;
+	font-size: 10vw;
+	font-weight: 700;
+	color: #006435;
+    letter-spacing: 2.5px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h6 {
+    color: white;
+    font-size: 4vw;
+    position: absolute;
+    text-transform: uppercase;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
 .slabtext {
     color: white;
-    line-height: .9;
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 500;
 
     &.payCount {
         color: #006435;
+        font-weight: 700;
     }
 }
 
@@ -148,16 +173,13 @@ video {
 
 	.mask {
 		position: absolute;
-		left: -70%;
+		left: -50%;
 		// height: 100vh;
   //   	width: 100vh;
   //   	border-radius: 100vh 0 0 100vh;
   // 		// background: #9e978e;
   // 		background: black;
 		display: inline-block;
-  		animation-name: mask;
-  		animation-duration: 5s;
-  		animation-fill-mode: forwards; 
   		width: 0px;
 		height: 0px;
 		border-right: 80vw solid black;
@@ -176,10 +198,6 @@ video {
         float: left;
         z-index: 1;
     }
-}
-
-@keyframes mask {
-  100% { width: 0; left: 100%; }
 }
 
 .coffee {
@@ -328,27 +346,24 @@ video {
     .textBox  {
         display: inline-block;
         position: relative;
-        top: 45%;
-        width: 35vw;
-        float: left;
-    }
-    
-    .textBox2 {
-        display: inline-flex;
-        flex-direction: column;
-    	position: relative;
-        top: 52.5%;
-        float: left;
+        text-align: center;
+        top: 10%;
+        width: 33vw;
+        left: 34%;
     }
     
     img {
         position: relative;
-        top: 52.5%;
         display: inline-block;
-        float: left;
-        width: 10vw
+        width: 10vw;
     }
 }
+
+#college {
+    position: absolute;
+    top: 10%;
+}
+
 
 .jobs {
 	position: relative;
@@ -360,6 +375,7 @@ video {
         display: inline-block;
         position: relative;
         top: 35%;
+        left: 10%;
         width: 40vw;
         float: left;
     }
@@ -369,6 +385,7 @@ video {
         flex-direction: column;
     	position: relative;
         top: 45%;
+        left: 10%;
         float: left;
     }
     
@@ -379,6 +396,14 @@ video {
         float: left;
         width: 10vw
     }
+}
+
+.filler {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url(../img/starbucks2.jpeg) no-repeat center center fixed;
+    background-size: cover;
 }
 
 .trees {
@@ -399,10 +424,10 @@ video {
     img, object, svg {
         display: inline-block;
         right: 0%;
-        bottom: 0%;
+        top: -30%;
         position: absolute;
         z-index: 0;
-        width: 50vw;
+        width: 60vw;
     }
 }
 
@@ -416,7 +441,9 @@ video {
 }
 
 #pin1 {
-    height: 200px;
+    position: absolute;
+    height: 100%;
+    z-index: 1;
 }
 
 .trees2 {
@@ -461,7 +488,7 @@ video {
 
 #farms {
     position: absolute;
-    top: 50%;
+    top: 30%;
 }
 
 .farms2 {
@@ -476,12 +503,13 @@ video {
 	background: #000;
 	height: 100vh;
 	width: 100%;
+    overflow-x: hidden;
     
     #textBox  {
         display: inline-block;
         position: relative;
-        top: 35%;
-        left: 5%;
+        margin-top: 5%;
+        margin-left: 5%;
         width: 26vw;
         float: left;
         height: auto;
@@ -496,7 +524,6 @@ video {
         width: 12vw;
         float: left;
         top: 50%;
-        left: 5%;
     }
     
     .circle {
@@ -516,7 +543,43 @@ video {
     top: 25%;
 }
 
-// @media only screen and (min-width: 320px) {
+.thanks {
+    position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.name {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url(../img/name2.png) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.starbucks {
+    position: relative;
+	background: #000;
+	height: 100vh;
+	width: 100%;
+    overflow-x: hidden;
+    
+    .text {
+        opacity: 0;
+    }
+    
+    .logo {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 25vw;
+        opacity: 0;
+    }
+}
+
+// @media only screen and (max-width: 320px) {
 //     .intro {
 //         height: 50vh;
 //         img {

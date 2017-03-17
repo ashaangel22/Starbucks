@@ -81,11 +81,35 @@ h4 {
   letter-spacing: 1px;
   line-height: 1.5; }
 
+h5 {
+  position: absolute;
+  text-align: left;
+  font-size: 10vw;
+  font-weight: 700;
+  color: #006435;
+  letter-spacing: 2.5px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); }
+
+h6 {
+  color: white;
+  font-size: 4vw;
+  position: absolute;
+  text-transform: uppercase;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap; }
+
 .slabtext {
   color: white;
-  line-height: .9; }
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: 500; }
   .slabtext.payCount {
-    color: #006435; }
+    color: #006435;
+    font-weight: 700; }
 
 /* 2. Content ================================= */
 header {
@@ -113,11 +137,8 @@ video {
     left: 0%; }
   .intro .mask {
     position: absolute;
-    left: -70%;
+    left: -50%;
     display: inline-block;
-    animation-name: mask;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
     width: 0px;
     height: 0px;
     border-right: 80vw solid black;
@@ -133,11 +154,6 @@ video {
     width: auto;
     float: left;
     z-index: 1; }
-
-@keyframes mask {
-  100% {
-    width: 0;
-    left: 100%; } }
 
 .coffee {
   position: relative;
@@ -250,21 +266,18 @@ video {
   .college .textBox {
     display: inline-block;
     position: relative;
-    top: 45%;
-    width: 35vw;
-    float: left; }
-  .college .textBox2 {
-    display: inline-flex;
-    flex-direction: column;
-    position: relative;
-    top: 52.5%;
-    float: left; }
+    text-align: center;
+    top: 10%;
+    width: 33vw;
+    left: 34%; }
   .college img {
     position: relative;
-    top: 52.5%;
     display: inline-block;
-    float: left;
     width: 10vw; }
+
+#college {
+  position: absolute;
+  top: 10%; }
 
 .jobs {
   position: relative;
@@ -275,6 +288,7 @@ video {
     display: inline-block;
     position: relative;
     top: 35%;
+    left: 10%;
     width: 40vw;
     float: left; }
   .jobs .textBox2 {
@@ -282,6 +296,7 @@ video {
     flex-direction: column;
     position: relative;
     top: 45%;
+    left: 10%;
     float: left; }
   .jobs img {
     position: relative;
@@ -289,6 +304,13 @@ video {
     display: inline-block;
     float: left;
     width: 10vw; }
+
+.filler {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: url(../img/starbucks2.jpeg) no-repeat center center fixed;
+  background-size: cover; }
 
 .trees {
   position: relative;
@@ -305,10 +327,10 @@ video {
   .trees img, .trees object, .trees svg {
     display: inline-block;
     right: 0%;
-    bottom: 0%;
+    top: -30%;
     position: absolute;
     z-index: 0;
-    width: 50vw; }
+    width: 60vw; }
 
 #trees {
   position: absolute; }
@@ -318,7 +340,9 @@ video {
   top: 45%; }
 
 #pin1 {
-  height: 200px; }
+  position: absolute;
+  height: 100%;
+  z-index: 1; }
 
 .trees2 {
   position: relative;
@@ -352,7 +376,7 @@ video {
 
 #farms {
   position: absolute;
-  top: 50%; }
+  top: 30%; }
 
 .farms2 {
   position: relative;
@@ -364,12 +388,13 @@ video {
   position: relative;
   background: #000;
   height: 100vh;
-  width: 100%; }
+  width: 100%;
+  overflow-x: hidden; }
   .pay #textBox {
     display: inline-block;
     position: relative;
-    top: 35%;
-    left: 5%;
+    margin-top: 5%;
+    margin-left: 5%;
     width: 26vw;
     float: left;
     height: auto; }
@@ -379,8 +404,7 @@ video {
     position: relative;
     width: 12vw;
     float: left;
-    top: 50%;
-    left: 5%; }
+    top: 50%; }
   .pay .circle {
     position: absolute;
     top: 30%;
@@ -394,6 +418,35 @@ video {
 #pay {
   position: absolute;
   top: 25%; }
+
+.thanks {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+.name {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: url(../img/name2.png) no-repeat center center fixed;
+  background-size: cover; }
+
+.starbucks {
+  position: relative;
+  background: #000;
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden; }
+  .starbucks .text {
+    opacity: 0; }
+  .starbucks .logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 25vw;
+    opacity: 0; }
 
 /*# sourceMappingURL=main.css.map */
 
