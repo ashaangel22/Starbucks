@@ -41,6 +41,10 @@ h1 {
         font-size: 13vw;
         letter-spacing: -4px;
     }
+
+    .big {
+        font-size: 10vw;
+    }
 }
 
 h2 {
@@ -115,18 +119,29 @@ h5 {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+
+    strong {
+        top: 45%;
+        color: white;
+        font-size: 4vw;
+        text-transform: uppercase;
+        white-space: nowrap;
+    }
 }
 
 h6 {
-    color: white;
-    font-size: 4vw;
-    position: absolute;
-    text-transform: uppercase;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    white-space: nowrap;
+    position: relative;
+    text-align: left;
+    font-size: 10vw;
+    font-weight: 700;
+    color: #006435;
+    letter-spacing: 2.5px;
+
+    span {
+        display: inline-block;
+    }
 }
+
 .slabtext {
     color: white;
     line-height: 1;
@@ -411,23 +426,23 @@ video {
 	background: #000;
 	height: 100vh;
 	width: 100%;
+
     
     .textBox  {
         display: inline-block;
         position: relative;
         top: 20%;
         width: 58vw;
-        float: left;
+        // float: left;
         z-index: 1;
     }
     
-    img, object, svg {
+    svg {
         display: inline-block;
-        right: 0%;
-        top: -30%;
+        right: 10%;
+        top: 10%;
         position: absolute;
-        z-index: 0;
-        width: 60vw;
+        width: 25vw;
     }
 }
 
@@ -579,244 +594,532 @@ video {
     }
 }
 
-// @media only screen and (max-width: 320px) {
-//     .intro {
-//         height: 50vh;
-//         img {
-//             left: -4%;
-//         }
+@media only screen and (max-width: 425px) {
+
+    h1 {
+        position: relative;
+        text-align: left;
+        font-size: 18vw;
+        font-weight: 700;
+        color: #006435;
+        letter-spacing: 2.5px;
+    
+        span {
+            display: inline-block;
+        }
         
-//         .textBox {
-//             top: 40%;
-//             left: 0%;
-//             width: 100vw;
-//         }
-//     }
-
-//     .coffee {
-//         height: 50vh;
-//     }
-
-//     .tea {
-//         height: 50vh;
+        strong {
+           font-size: 13vw;
+        }
         
-//         .textBox {
-//             top: 25%;
-//             left: 15%;
-//         }
+        em {
+            font-size: 13vw;
+            letter-spacing: -4px;
+        }
+        .big {
+            font-size: 10vw;
+        }
+    }
 
-//         .imageContainer {
-//             height: 50vh;
-//         }
+    h2 {
+        position: relative;
+        text-align: left;
+        float: left;
+        font-size: 15vw;
+        font-weight: 700;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 6px;
 
-//         img {
-
-//             &:nth-child(1), &:nth-child(11) {
-//                 display: none;
-//             }
-//             &:nth-child(2) {
-//                 display: none;
-//             }
-//             &:nth-child(10) {
-//                 width: 7vw;
-//             } 
-//         }
-
-//     }
-
-//     #tea {
-//         position: absolute;
-//         top: 0%;
-//     }
-
-//     .good {
-//         position: relative;
-//         height: 50vh;
-//         width: 100vw;
-//         background: url(../img/coffee.png) no-repeat center center fixed;
-//         background-size: cover;
-
-//         .textBox {
-//             display: inline-block;
-//             position: absolute;
-//             top: 15%;
-//             left: 5%;
-//             width: 32vw;
-//             height: auto;
-//             float: left;
-//         }
-
-//         .textBox2 {
-//             display: inline-block;
-//             position: absolute;
-//             top: 35%;
-//             left: 10%;
-//             width: 32vw;
-//             height: auto;
-//             float: left;
-//         }
-//     }
-
-//     .veterans {
-//         height: 50vh;
+        span {
+            display: inline-block;
+        }
         
-//         .textBox {
-//             top: 10%;
-//             left: 10%;
-//             width: 80vw;
+        strong {
+            font-size: 6vw;
+            letter-spacing: 1px;
+        }
+        
+        em {
+            font-size: 3.2vw;
+            letter-spacing: 1px;
+        }
+
+    }
+
+    h3 {
+        position: relative;
+        text-align: left;
+        font-size: 7vw;
+        font-weight: 700;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        white-space: nowrap;
+
+        span {
+            display: inline-block;
+        }
+        
+        strong {
+            font-size: 2.8vw;
+            letter-spacing: 4px;
+            white-space: normal;
+        }
+        
+        em {
+            font-size: 2.8vw;
+            letter-spacing: 9px;  
+        }
+    }
+
+    h4 {
+        position: relative;
+        text-align: left;
+        font-size: 10vw;
+        font-weight: 700;
+        color: white;
+        letter-spacing: 1px;
+        line-height: 1.5;
+    }
+
+    h5 {
+        position: absolute;
+        text-align: left;
+        font-size: 10vw;
+        font-weight: 700;
+        color: #006435;
+        letter-spacing: 2.5px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+        strong {
+            top: 45%;
+            color: white;
+            font-size: 4vw;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+    }
+
+    h6 {
+        position: relative;
+        text-align: left;
+        font-size: 16vw;
+        font-weight: 700;
+        color: #006435;
+        letter-spacing: 2.5px;
+
+        span {
+            display: inline-block;
+        }
+    }
+
+    .slabtext {
+        color: white;
+        line-height: 1;
+        text-transform: uppercase;
+        font-weight: 500;
+
+        &.payCount {
+            color: #006435;
+            font-weight: 700;
+        }
+    }
+
+    .intro {
+        position: relative;
+        background: #000;
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+        
+        img {
+            position: absolute;
+            left: 0%;
+        }
+
+        .textBox {
+            top: 35%;
+            left: 0%;
+            width: 100%;
+            padding-left: 3%;
+        }
+    }
+
+    .tea {
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        background: black;
+        
+        .textBox {
+            display: inline-block;
+            position: relative;
+            top: 15%;
+            left: 0%;
+            padding-left: 3%;
+            float: left;
+        }
+
+        .imageContainer {
+            position: absolute;
+            top: 0%;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            z-index: 0;
+        }
+
+        img {
+
+            &:nth-child(1), &:nth-child(11) {
+                display: none;
+            }
+            &:nth-child(2), &:nth-child(10) {
+                display: none;
+            } 
+            &:nth-child(3), &:nth-child(9) {
+                width: 11vw;
+            } 
+            &:nth-child(4), &:nth-child(8) {
+                width: 12vw;
+            } 
+            &:nth-child(5), &:nth-child(7) {
+                width: 13vw;
+            } 
+            &:nth-child(6) {
+                width: 14vw;
+            }
+        }
+
+    }
+
+    #tea {
+        position: absolute;
+        top: 35%;
+    }
+
+    .good {
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        background: url(../img/coffee.png) no-repeat center center;
+        background-size: cover;
+        overflow: hidden;
+
+        .textBox {
+            display: inline-block;
+            position: absolute;
+            top: 15%;
+            left: 5%;
+            width: 80vw;
+            height: auto;
+            float: left;
+        }
+
+        .textBox2 {
+            display: inline-block;
+            position: absolute;
+            top: 45%;
+            left: 10vw;
+            width: 70vw;
+            height: auto;
+            float: left;
+        }
+    }
+
+    .veterans {
+        overflow: hidden;
+        
+        .textBox {
+            display: inline-block;
+            position: relative;
+            top: 45%;
+            width: 100%;
+            float: left;
             
-//             img {
-//                 top: -5px;
-//                 width: 20vw;
-//             }
-//         }
+            img {
+                display: inline-block;
+                position: relative;
+                top: -14px;
+                width: 20vw;
+                float: left;
+            }
+        }
         
-//         .imageContainer {
-//             width: 30vw;
+        .imageContainer {
+            display: flex;
+            width: 100%;
+            align-items: flex-end;
+            justify-content: space-around;
+            overflow: hidden;
             
-//             img {
-//                 width: 3vw;
-//             }
-//         }
+            img {
+                width: 8vw;
+            }
+        }
         
-//         .textBox2 {
-//             top: 20%;
-//             left: 25%;
-//         }
-//     }
+        .textBox2 {
+            display: inline-flex;
+            flex-direction: column;
+            position: relative;
+            top: 52%;
+            float: left;
+        }
+    }
 
-//     #veterans {
-//         position: absolute;
-//         top: 10%;
-//     }
+    #veterans {
+        position: absolute;
+        top: 30%;
+    }
+    .college {
+        position: relative;
+        background: #000;
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+        
+        .textBox  {
+            display: inline-block;
+            position: relative;
+            text-align: center;
+            top: 10%;
+            width: 33vw;
+            left: 34%;
+        }
+        
+        img {
+            position: relative;
+            display: inline-block;
+            width: 10vw;
+        }
+    }
 
-//     .college {
-//         height: 50vh;
-        
-//         .textBox  {
-//             top: 5%;
-//             left: 25%;
-//             width: 100vw;
-//         }
-        
-//         .textBox2 {
-//             left: 25%;
-//             top: 30%;
-//         }
-        
-//         img {
-//             top: 10%;
-//             width: 13vw;
-//         }
-//     }
-
-//     .jobs {
-//         height: 50vh;
-        
-//         .textBox  {
-//             top: 35%;
-//             left: 25%;
-//             width: 100vw;
-//         }
-        
-//         .textBox2 {
-//             left: 25%;
-//             top: 45%;
-//         }
-//     }
-
-//     .trees {
-//         height: 50vh;
-        
-//         .textBox  {
-//             top: 5%;
-//             left: 10%;
-//             width: 70vw;
-//         }
-        
-//         img, object, svg {
-//             right: 30%;
-//             width: 60vw;
-//         }
-//     }
-
-//     #trees {
-//         position: absolute;
-//         top: 0%;
-//     }
+    #college {
+        position: absolute;
+        top: 10%;
+    }
 
 
-//     .trees2 {
-//         height: 50vh;
-//     }
+    .jobs {
+        position: relative;
+        background: #000;
+        height: 100vh;
+        width: 100%;
+        
+        .textBox  {
+            display: inline-block;
+            position: relative;
+            top: 35%;
+            left: 10%;
+            width: 40vw;
+            float: left;
+        }
+        
+        .textBox2 {
+            display: inline-flex;
+            flex-direction: column;
+            position: relative;
+            top: 45%;
+            left: 10%;
+            float: left;
+        }
+        
+        img {
+            position: relative;
+            top: 52%;
+            display: inline-block;
+            float: left;
+            width: 10vw
+        }
+    }
 
-//     .farms {
-//         height: 50vh;
+    .filler {
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        background: url(../img/starbucks2.jpeg) no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    .trees {
+        position: relative;
+        background: #000;
+        height: 100vh;
+        width: 100%;
+
         
-//         .textBox  {
-//             top: 5%;
-//             left: 5%;
-//             width: 100%;
-//         }
+        .textBox  {
+            display: inline-block;
+            position: relative;
+            top: 20%;
+            width: 58vw;
+            // float: left;
+            z-index: 1;
+        }
         
-//         .imageContainer {
-//             height: 50vh;
+        svg {
+            display: inline-block;
+            right: 10%;
+            top: 10%;
+            position: absolute;
+            width: 25vw;
+        }
+    }
+
+    #trees {
+        position: absolute;
+    }
+
+    #trigger1 {
+        position: absolute;
+        top: 45%;
+    }
+
+    #pin1 {
+        position: absolute;
+        height: 100%;
+        z-index: 1;
+    }
+
+    .trees2 {
+        position: relative;
+        background: #000;
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .farms {
+        position: relative;
+        background: #000;
+        height: 100vh;
+        width: 100%;
+        
+        .textBox  {
+            display: inline-block;
+            position: relative;
+            margin-top: 5%;
+            width: 100%;
+        }
+        
+        .imageContainer {
+            position: absolute;
+            top: 0%;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
             
-//             img {
-//                 height: 8vw;
-
-//                 &:nth-child(0), &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5) {
-//                     display: none;
-//                 }
-//             }
+            img {
+                height: 6vw;
+            }
             
-//             .tractor {
-//                 display: none;
-//             }
-//         }
-//     }
+            .tractor {
+                height: 7vw;
+            }
+        }
+    }
 
-//     #farms {
-//         position: absolute;
-//         top: -10%;
-//     }
+    #farms {
+        position: absolute;
+        top: 30%;
+    }
 
-//     .farms2 {
-//         height: 50vh;
-//     }
+    .farms2 {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
 
-//     .pay {
-//         height: 50vh;
+    .pay {
+        position: relative;
+        background: #000;
+        height: 100vh;
+        width: 100%;
+        overflow-x: hidden;
         
-//         #textBox  {
-//             display: inline-block;
-//             position: relative;
-//             top: 10%;
-//             left: 30%;
-//             width: 26vw;
-//             float: left;
-//             height: auto;
-//         }
+        #textBox  {
+            display: inline-block;
+            position: relative;
+            margin-top: 5%;
+            margin-left: 5%;
+            width: 26vw;
+            float: left;
+            height: auto;
+        }
         
-//         img {
-//             width: 12vw;
-//         }
+        img {
+            width: 12vw;
+        }
         
-//         .flipcup {
-//             position: relative;
-//             width: 12vw;
-//             float: left;
-//             bottom: 0%;
-//             left: 0%;
-//         }
-//     }
+        .flipcup {
+            position: relative;
+            width: 12vw;
+            float: left;
+            top: 50%;
+        }
+        
+        .circle {
+            position: absolute;
+            top: 30%;
+            left: 30%;
+            border-radius: 50%;
+            width: 5vw;
+            height: 5vw;
+            background: #000;
+            z-index: 1;
+        }
+    }
 
-//     #pay {
-//         position: absolute;
-//         top: -50%;
-//     }
+    #pay {
+        position: absolute;
+        top: 25%;
+    }
 
-// }
+    .thanks {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .name {
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        background: url(../img/name2.png) no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    .starbucks {
+        position: relative;
+        background: #000;
+        height: 100vh;
+        width: 100%;
+        overflow-x: hidden;
+        
+        .text {
+            opacity: 0;
+        }
+        
+        .logo {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 25vw;
+            opacity: 0;
+        }
+    }
+
+}
 
 /*# sourceMappingURL=main.css.map */
 
