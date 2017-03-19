@@ -28,6 +28,7 @@ h1 {
 	font-weight: 700;
 	color: #006435;
     letter-spacing: 2.5px;
+    text-transform: uppercase;
     
 	span {
 		display: inline-block;
@@ -103,6 +104,7 @@ h4 {
     color: white;
     letter-spacing: 1px;
     line-height: 1.5;
+    text-transform: uppercase;
 }
 
 h5 {
@@ -127,6 +129,7 @@ h5 {
 
 h6 {
     position: relative;
+    text-transform: uppercase;
     text-align: left;
     font-size: 10vw;
     font-weight: 700;
@@ -292,7 +295,7 @@ video {
     .textBox2 {
         display: inline-block;
         position: absolute;
-        top: 35%;
+        top: 45%;
         left: 10%;
         width: 32vw;
         height: auto;
@@ -563,10 +566,10 @@ video {
 
 .name {
     position: relative;
-    height: 100vh;
-    width: 100%;
+    height: 80%;
     background: url(../img/name2.png) no-repeat center center fixed;
-    background-size: cover;
+    background-color: #000;
+    background-size: contain;
 }
 
 .starbucks {
@@ -590,14 +593,68 @@ video {
     }
 }
 
-@media only screen and (max-width: 745px) {
+#pay {
+    position: absolute;
+    top: 25%;
+}
+
+
+@media screen and (max-width: 1440px) {
+    .pay {
+        position: relative;
+        background: #000;
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+        
+        #textBox  {
+            display: inline-block;
+            position: relative;
+            margin-top: 10%;
+            margin-left: 10%;
+            width: 80vw;
+            float: left;
+            height: auto;
+            margin-bottom: 10%;
+        }
+        
+        img {
+            width: 20vw;
+        }
+        
+        .flipcup {
+            position: relative;
+            width: 18vw;
+            float: left;
+            top: 0%;
+            left: 0%;
+        }
+        
+        .circle {
+            position: absolute;
+            top: 30%;
+            left: 30%;
+            border-radius: 50%;
+            width: 8vw;
+            height: 8vw;
+            background: #000;
+            z-index: 1;
+        }
+    }
+
+    #pay {
+        position: absolute;
+        top: 0%;
+    }
+
+
+}
+
+
+@media screen and (max-width: 745px) {
     .thanks, .name {
         display: none;
     }
-}
-
-@media only screen and (max-width: 800px) {
-
     h1 {
         position: relative;
         text-align: left;
@@ -818,7 +875,7 @@ video {
         .textBox {
             display: inline-block;
             position: absolute;
-            top: 15%;
+            top: 5%;
             left: 5%;
             width: 80vw;
             height: auto;
@@ -828,7 +885,7 @@ video {
         .textBox2 {
             display: inline-block;
             position: absolute;
-            top: 45%;
+            bottom: 5%;
             left: 10vw;
             width: 70vw;
             height: auto;
@@ -852,7 +909,7 @@ video {
                 position: relative;
                 top: 0px;
                 padding-left: 0 40%;
-                width: 100vw;
+                width: 90vw;
                 float: left;
                 margin-bottom: 5%;
             }
@@ -1102,7 +1159,7 @@ video {
         background: #000;
         height: 100vh;
         width: 100%;
-        overflow-x: hidden;
+        overflow: hidden;
         
         #textBox  {
             display: inline-block;
@@ -1112,6 +1169,7 @@ video {
             width: 80vw;
             float: left;
             height: auto;
+            margin-bottom: 10%;
         }
         
         img {
@@ -1122,8 +1180,8 @@ video {
             position: relative;
             width: 18vw;
             float: left;
-            top: 30%;
-            left: 5%;
+            top: 0%;
+            left: 0%;
         }
         
         .circle {

@@ -9,7 +9,7 @@ $(document).ready(function () {
     var testPin = new ScrollMagic.Scene({
         triggerElement: '#trigger1',
         duration: '100%'
-    }).setPin('#pin1').addIndicators({ name: "1 (duration: 500)" }).addTo(controller);
+    }).setPin('#pin1').addTo(controller);
 
     var coffeeCups = TweenMax.to(".intro .mask", 2, { x: "100%" });
 

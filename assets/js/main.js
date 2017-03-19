@@ -9,7 +9,6 @@ $(document).ready(function(){
         duration: '100%'
     })
         .setPin('#pin1')
-        .addIndicators({name: "1 (duration: 500)"})
         .addTo(controller);
     
     var coffeeCups = TweenMax.to(".intro .mask", 2, {x:"100%"});
