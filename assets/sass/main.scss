@@ -41,10 +41,6 @@ h1 {
         font-size: 13vw;
         letter-spacing: -4px;
     }
-
-    .big {
-        font-size: 10vw;
-    }
 }
 
 h2 {
@@ -432,14 +428,14 @@ video {
         display: inline-block;
         position: relative;
         top: 20%;
-        width: 58vw;
+        width: 75vw;
         // float: left;
         z-index: 1;
     }
     
     svg {
         display: inline-block;
-        right: 10%;
+        right: 1%;
         top: 10%;
         position: absolute;
         width: 25vw;
@@ -594,12 +590,18 @@ video {
     }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 745px) {
+    .thanks, .name {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 800px) {
 
     h1 {
         position: relative;
         text-align: left;
-        font-size: 18vw;
+        font-size: 35vw;
         font-weight: 700;
         color: #006435;
         letter-spacing: 2.5px;
@@ -609,23 +611,20 @@ video {
         }
         
         strong {
-           font-size: 13vw;
+           font-size: 20vw;
         }
         
         em {
-            font-size: 13vw;
+            font-size: 30vw;
             letter-spacing: -4px;
-        }
-        .big {
-            font-size: 10vw;
         }
     }
 
     h2 {
         position: relative;
-        text-align: left;
-        float: left;
-        font-size: 15vw;
+        text-align: center;
+        float: none;
+        font-size: 16vw;
         font-weight: 700;
         color: white;
         text-transform: uppercase;
@@ -636,12 +635,12 @@ video {
         }
         
         strong {
-            font-size: 6vw;
+            font-size: 14vw;
             letter-spacing: 1px;
         }
         
         em {
-            font-size: 3.2vw;
+            font-size: 10vw;
             letter-spacing: 1px;
         }
 
@@ -650,7 +649,7 @@ video {
     h3 {
         position: relative;
         text-align: left;
-        font-size: 7vw;
+        font-size: 8vw;
         font-weight: 700;
         color: white;
         text-transform: uppercase;
@@ -662,13 +661,13 @@ video {
         }
         
         strong {
-            font-size: 2.8vw;
+            font-size: 8vw;
             letter-spacing: 4px;
             white-space: normal;
         }
         
         em {
-            font-size: 2.8vw;
+            font-size: 6vw;
             letter-spacing: 9px;  
         }
     }
@@ -685,8 +684,8 @@ video {
 
     h5 {
         position: absolute;
-        text-align: left;
-        font-size: 10vw;
+        text-align: center;
+        font-size: 20vw;
         font-weight: 700;
         color: #006435;
         letter-spacing: 2.5px;
@@ -697,9 +696,10 @@ video {
         strong {
             top: 45%;
             color: white;
-            font-size: 4vw;
+            font-size: 6vw;
             text-transform: uppercase;
             white-space: nowrap;
+            text-align: left;
         }
     }
 
@@ -796,6 +796,10 @@ video {
             }
         }
 
+        h2 {
+            text-align: left;
+        }
+
     }
 
     #tea {
@@ -838,16 +842,38 @@ video {
         .textBox {
             display: inline-block;
             position: relative;
-            top: 45%;
+            top: 5%;
             width: 100%;
+            padding-left: 2%;
             float: left;
             
             img {
                 display: inline-block;
                 position: relative;
-                top: -14px;
-                width: 20vw;
+                top: 0px;
+                padding-left: 0 40%;
+                width: 100vw;
                 float: left;
+                margin-bottom: 5%;
+            }
+
+            h3 {
+                position: relative;
+                text-align: center;
+                font-size: 7vw;
+                font-weight: 700;
+                color: white;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                white-space: normal;
+            }
+
+            h1 {
+                text-align: center;
+            }
+
+            h1 strong {
+                font-size: 35vw;
             }
         }
         
@@ -867,15 +893,19 @@ video {
             display: inline-flex;
             flex-direction: column;
             position: relative;
-            top: 52%;
+            background: #000;
+            padding-left: 2%;
+            top: 10%;
             float: left;
         }
+
     }
 
     #veterans {
         position: absolute;
         top: 30%;
     }
+
     .college {
         position: relative;
         background: #000;
@@ -887,21 +917,30 @@ video {
             display: inline-block;
             position: relative;
             text-align: center;
-            top: 10%;
-            width: 33vw;
-            left: 34%;
+            top: 15%;
+            width: 100%;
+            left: 0%;
+            padding-left: 5%;
         }
         
         img {
             position: relative;
             display: inline-block;
-            width: 10vw;
+            width: 40vw;
+            margin-top: 10%;
+        }
+
+        h1 {
+            
+            strong {
+               font-size: 35vw;
+            }
         }
     }
 
     #college {
         position: absolute;
-        top: 10%;
+        top: 0%;
     }
 
 
@@ -910,31 +949,26 @@ video {
         background: #000;
         height: 100vh;
         width: 100%;
+        overflow: hidden;
         
         .textBox  {
             display: inline-block;
             position: relative;
-            top: 35%;
-            left: 10%;
-            width: 40vw;
+            top: 20%;
+            left: 0%;
+            padding-left: 5%;
+            width: 100%;
             float: left;
         }
         
         .textBox2 {
-            display: inline-flex;
+            display: inline-block;
             flex-direction: column;
             position: relative;
-            top: 45%;
-            left: 10%;
+            width: 100%;
+            top: 27%;
+            left: 0%;
             float: left;
-        }
-        
-        img {
-            position: relative;
-            top: 52%;
-            display: inline-block;
-            float: left;
-            width: 10vw
         }
     }
 
@@ -942,7 +976,7 @@ video {
         position: relative;
         height: 100vh;
         width: 100%;
-        background: url(../img/starbucks2.jpeg) no-repeat center center fixed;
+        background: url(../img/starbucks2.jpeg) no-repeat center center;
         background-size: cover;
     }
 
@@ -956,23 +990,32 @@ video {
         .textBox  {
             display: inline-block;
             position: relative;
-            top: 20%;
-            width: 58vw;
+            top: 45%;
+            width: 100%;
             // float: left;
             z-index: 1;
         }
         
         svg {
             display: inline-block;
-            right: 10%;
-            top: 10%;
+            right: 30%;
+            top: 2%;
             position: absolute;
-            width: 25vw;
+            width: 40vw;
+        }
+
+        h1 strong {
+            text-align: center;
+        }
+
+        h3 {
+            text-align: center;
         }
     }
 
     #trees {
         position: absolute;
+        top: 0%;
     }
 
     #trigger1 {
@@ -1017,18 +1060,34 @@ video {
             justify-content: space-between;
             
             img {
-                height: 6vw;
+                height: 15vw;
+
+                &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5), &:nth-child(6), &:nth-child(7), &:nth-child(8), &:nth-child(9), &:nth-child(10), &:nth-child(0),  {
+                display: none;
+                }
             }
             
             .tractor {
-                height: 7vw;
+                height: 20vw;
             }
+        }
+
+        h3, h1 {
+            text-align: center;
+        }
+
+        h1 {
+           font-size: 25vw; 
+        }
+
+        h1 strong{
+            font-size: 25vw;
         }
     }
 
     #farms {
         position: absolute;
-        top: 30%;
+        top: 0%;
     }
 
     .farms2 {
@@ -1048,22 +1107,23 @@ video {
         #textBox  {
             display: inline-block;
             position: relative;
-            margin-top: 5%;
-            margin-left: 5%;
-            width: 26vw;
+            margin-top: 10%;
+            margin-left: 10%;
+            width: 80vw;
             float: left;
             height: auto;
         }
         
         img {
-            width: 12vw;
+            width: 20vw;
         }
         
         .flipcup {
             position: relative;
-            width: 12vw;
+            width: 18vw;
             float: left;
-            top: 50%;
+            top: 30%;
+            left: 5%;
         }
         
         .circle {
@@ -1071,8 +1131,8 @@ video {
             top: 30%;
             left: 30%;
             border-radius: 50%;
-            width: 5vw;
-            height: 5vw;
+            width: 8vw;
+            height: 8vw;
             background: #000;
             z-index: 1;
         }
@@ -1080,7 +1140,7 @@ video {
 
     #pay {
         position: absolute;
-        top: 25%;
+        top: 0%;
     }
 
     .thanks {
@@ -1110,12 +1170,7 @@ video {
         }
         
         .logo {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            width: 25vw;
-            opacity: 0;
+            width: 60vw;
         }
     }
 
