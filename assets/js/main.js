@@ -265,9 +265,9 @@ $(document).ready(function(){
     
     var tl6 = new TimelineMax();
     
-    tl6.to($('.starbucks .text'), 3, {opacity:1})
+    tl6.to($('.starbucks .text'), 1, {opacity:1})
 	.to($('.starbucks .text'), 1, {opacity:0})
-    .to($('.starbucks .logo'), 4, {opacity:1})
+    .to($('.starbucks .logo'), 2, {opacity:1})
     
     var cups = new ScrollMagic.Scene({
         triggerElement: "#end",
